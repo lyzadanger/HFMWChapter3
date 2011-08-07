@@ -116,6 +116,10 @@ a {
   float: right;
 }
 
+.dashboard .event_subject {
+  font-weight: bold;
+}
+
 .dashboard .event_summary {
   font-size: 0.85em;
   color: #666;
@@ -127,6 +131,8 @@ a {
   line-height: 1.3em;
   border: 1px solid #ccc;
   border-width: 1px 0;
+  height: 70px;
+  overflow: scroll;
 }
 
 .morelink {
