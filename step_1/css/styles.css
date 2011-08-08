@@ -7,7 +7,10 @@ body {
   font-family: "Helvetica", "Verdana", "Arial", san-serif;
   font-size: 100%;
   width: 100%;
-  background: #f3ffc2 url('cows.jpg') no-repeat top center;
+  background-color: #f3ffc2;
+  background-image: url('cows.jpg');
+  background-repeat: no-repeat;
+  background-position: 50% 0px;
 }
 
 p {
