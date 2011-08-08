@@ -2,7 +2,6 @@
   padding: 0;
   margin: 0;
 }
-
 body {
   font-family: "Helvetica", "Verdana", "Arial", san-serif;
   font-size: 100%;
@@ -12,25 +11,21 @@ body {
   background-repeat: no-repeat;
   background-position: 50% 0px;
 }
-
 p {
   font-size: .95em;
   margin: 0.25em 0;
 }
-
 h1, h2, h3, h4, h5 {
   font-family: "Times New Roman", serif;
   margin: 0;
   color: #10508c;
   text-align: center;
 }
-
 h3 { 
   font-style: italic; 
   font-weight: 100;
-  font-size: 1.1em;
+  font-size: 1.15em;
 }
-
 ul {
   list-style-type: circle;
   width: 100%;
@@ -39,15 +34,12 @@ a {
   text-decoration: none; 
   color: #096c9f;
 }
-
 .header {
  height: 150px;
 }
-
 .tools ul {
   list-style-type: none;
 }
-
 .tools ul li a {
   -webkit-border-radius: 5px;
   -moz-border-radius: 5px;
@@ -61,30 +53,24 @@ a {
   text-align: center;
   padding: .6em 0;
 }
-
 .greeting { 
-  font-style: italic;
-  font-size: 1.1em;
   border: 1px dashed #10508c;
   border-width: 1px 0;
 }
-
 .dashboard {
   -webkit-border-radius: 5px;
   -moz-border-radius: 5px;
   border-radius: 5px;
   background-color: #fff;
   border: 1px solid #ccc;
-  margin: 10% 3%;
+  margin: 1em 3%;
   padding: .5em 0;
   width: 94%;
 }
-
 .dashboard div {
   vertical-align: top;
   border: none;
 }
-
 .dashboard .event {
   border: 1px dashed #ddd;
   border-width: 1px 0 0 0;
@@ -94,11 +80,9 @@ a {
   clear: both;
   overflow: hidden;
 }
-
 .dashboard .odd {
   background-color: #fff;
 }
-
 .dashboard .even {
   background-color: #eee;
 }
@@ -107,27 +91,22 @@ a {
   margin: 0 2%;
   float: left;
 }
-
 .dashboard .event_time {
   font-size: .9em;
   color: #666;
 }
-
 .dashboard .event_details {
   width: 64%;
   margin: 0 2%;
   float: right;
 }
-
 .dashboard .event_subject {
   font-weight: bold;
 }
-
 .dashboard .event_summary {
   font-size: 0.85em;
   color: #666;
 }
-
 .status_message {
   background-color: #f8f1b2;
   padding: 0.25em;
@@ -137,14 +116,11 @@ a {
   height: 70px;
   overflow: scroll;
 }
-
 .morelink {
   padding: .75em;
   text-align: right;
 }
-
 .footer {
   width: 100%;
   clear: both;
-  overflow: hidden;
 }
