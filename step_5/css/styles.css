@@ -1,0 +1,88 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+body {
+  font-family: "Helvetica", "Verdana", "Arial", san-serif;
+  font-size: 100%;
+  width: 100%;
+  background-color: #f3ffc2;
+}
+p {
+  font-size: .95em;
+  margin: 0.25em 0;
+}
+h1, h2, h3, h4, h5 {
+  font-family: "Times New Roman", serif;
+  margin: 0;
+  color: #10508c;
+  text-align: center;
+}
+h3 { 
+  font-weight: 100;
+  font-size: 1.15em;
+}
+a {
+  text-decoration: none; 
+  color: #096c9f;
+}
+.tools ul {
+  list-style-type: none;
+}
+.tools ul li a {
+  display: block;
+  height: 1em;
+  width:  94%;
+  background-color: #fff;
+  margin: 2%;
+  border: 1px solid #ccc;
+  text-align: center;
+  padding: .3em 0em;
+}
+.greeting {
+  border: 1px dashed #10508c;
+  border-width: 1px 0;
+}
+.dashboard {
+  background-color: #fff;
+  border: 1px solid #ccc;
+  margin: 1em 3%;
+  padding: .5em 0;
+  width: 94%;
+}
+.dashboard table {
+  border-collapse: collapse;
+}
+.dashboard table th {
+  padding: .25em;
+}
+.dashboard td.event {
+  border: 1px dashed #ddd;
+  border-width: 1px 0 0 0;
+  padding: 0.5em;
+  vertical-align: top;
+}
+.dashboard td.event_meta {
+  width: 30%;
+}
+.dashboard .odd {
+  background-color: #fff;
+}
+.dashboard .even {
+  background-color: #eee;
+}
+.status_message {
+  background-color: #f8f1b2;
+  padding: 0.25em;
+  line-height: 1.3em;
+  border: 1px solid #ccc;
+  border-width: 1px 0;
+}
+.morelink {
+  padding: .75em;
+  text-align: right;
+}
+.footer {
+  width: 100%;
+  clear: both;
+}
