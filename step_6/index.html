@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML Basic 1.1//EN" "http://www.w3.org/TR/xhtml-basic/xhtml-basic11.dtd">
+<html>
+<head>
+  <title>Creature Comforts Agent Portal</title>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" /> 
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+  <link rel="stylesheet" type="text/css" href="../step_5/css/styles.css" />
+  <style type="text/css">
+    #dashboard_holder .dashboard { background-color: #f8f1b2; }
+    #dashboard_holder .dashboard h3 a { padding: 0 16px;}
+    .dashboard_open a { background-image: url('css/open.gif'); background-repeat: no-repeat; }
+    .dashboard_closed a { background-image: url('css/closed.gif'); background-repeat: no-repeat; }
+  </style>
+</head>
+<body>
+  <div class="header">
+    <h1>Creature Comforts</h1>
+    <h2>Agent Portal</h2>
+  </div>
+
+  <div class="greeting">
+    <h3>Welcome back, Dr. Jessica Evans</h3>
+  </div>
+  
+  <div id="dashboard_holder">
+  </div>
+  
+  <div class="tools">
+    <ul>
+      <li><a href="#dashboard" accesskey="1">Your Dashboard</a></li>
+      <li><a href="messages" accesskey="2">Messages (2)</a></li>
+      <li><a href="schedule" accesskey="3">Your Schedule</a></li>
+      <li><a href="supplies" accesskey="4">Request Supplies</a></li>
+      <li><a href="personnel" accesskey="5">Request Personnel</a></li>
+      <li><a href="call_hq" accesskey="6">Call HQ</a></li>
+    </ul>
+  </div>
+  
+    <div class="status_message">
+    <p>February 4: Loading supplies and contacting personnel to assist with flood event in Bangladesh. Contact HQ if you are currently unscheduled and available to assist in the effort.</p>
+    </div>
+    
+    <div id="dashboard" class="dashboard">
+      <h3>Your Dashboard</h3>
+      <table>
+          <tr>
+            <th>Event</th>
+            <th>Details</th>
+          </tr>
+
+          <tr class="even">
+          <td class="event event_meta"><p><strong>Message</strong><br />
+            Feb 3 8:54PM EST</p>
+          </td>
+          <td class="event"><p><a href="#"><strong>Supply Request #493-C4 Approved</strong></a><br />
+          Hi, Jess, Good news! I wanted to let you know that we were successful in tracking down those bottles…</p></td>
+          </tr>
+        
+          <tr class="odd">
+          <td class="event event_meta"><p><strong>Message</strong><br />
+          Feb 3 1:47PM EST</p></td>
+          <td class="event"><p><a href="#"><strong>Supply Request #493-C4 Received</strong></a><br />
+          This is an automated message to confirm that your recent Supply Request has been received and is in process...</p></td>
+          </tr>
+          
+          <tr class="even">
+          <td class="event event_meta"><p><strong>Event Scheduled</strong><br />
+          Feb 3 8:22AM EST</p></td>
+          <td class="event"><p><a href="#"><strong>Itinerary 39924 Approved LAX -> DAC</strong></a><br />
+          Your itinerary for event: "Bangladesh Flood Event" has been approved. Your calendar has been updated...</p></td>
+          </tr>
+          
+          <tr class="odd">
+          <td class="event event_meta"><p><strong>Personnel Event</strong><br />
+          Feb 2 9:23PM EST</p></td>
+          <td class="event"><p><a href="#"><strong>Re: Personnel Confirmation 03/05 - 03/15</strong></a><br />
+          Jessica! Thanks so much for committing to this operation! I think Dr. Madling is going too and…</p>
+          </td>
+          </tr>
+          
+          <tr>
+          <td colspan="2"><div class="morelink"><p><a href="#">More &gt;&gt;</a></p></div></td>
+          </tr>
+
+      </table>
+      
+    
+    </div> <!-- /.dashboard -->
+
+  <div class="footer">
+    
+  </div>
+  <script type="text/javascript" language="javascript" src="jquery.js"></script>
+  <script type="text/javascript">
+    $(document).ready(function() {
+      var dashboard_content = $('#dashboard');         // Get a copy of the dashboard div
+      var dashboard_link = $('.tools li:first a');
+      $('.tools li:first').remove();
+      $('#dashboard').remove(); // But remove it and the first <li> in the list from the DOM
+      $('#dashboard_holder').append($(dashboard_content)); // Move the dashboard to the #dashboard_holder div
+      $('#dashboard h3').empty().append($(dashboard_link));
+      $("#dashboard h3").addClass('dashboard_open').click(function() { // Click event on <h3>
+        $('#dashboard table').toggle(); // Show/hide dashboard
+        $(this).toggleClass('dashboard_closed dashboard_open'); // Toggle these CSS styles
+      });
+    });
+  </script>
+</body>
+</html>
