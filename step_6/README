@@ -1,4 +1,0 @@
-Chapter 3, Step 6
-=================
-
-In this step, we add some progressive enhancement via basic JavaScript. For JS-enabled browsers, we're moving the dashboard div (with its table) up to near the top of the page and making it collapsible. Browsers without JavaScript support will still experience the dashboard at the bottom of the page.
