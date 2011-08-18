@@ -2,13 +2,11 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Creature Comforts Agent Portal</title>
-  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" /> 
-  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
-  <link rel="stylesheet" type="text/css" href="css/styles.css" />
+  <title>Creature Comforts Agent Portal: Desktop Version</title>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 </head>
 <body>
-  <h1>Ostensible Desktop Landing Page</h1>
-  <h2>Use index_mobile.html instead</h2>
+  <h1>Desktop Landing Page</h1>
+  <p>If you hit this page, perhaps you are using a browser with a desktop-looking User Agent? Having trouble getting the mobile redirect to work, or otherwise <a href="index_mobile.html">seeking the mobile mockup landing page</a>?</p> 
 </body>
 </html>
