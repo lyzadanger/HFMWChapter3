@@ -37,7 +37,7 @@
     </tr>
     
     <tr>
-    <td colspan="2"><div class="morelink"><p><a href="#">More &gt;&gt;</a></p></div></td>
+    <td colspan="2"><div class="morelink"><p><a href="#">More &gt;&gt;</p></a></div></td>
     </tr>
     
   </tbody>
