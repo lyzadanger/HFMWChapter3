@@ -1,4 +1,3 @@
-<?php require_once('redirect.php'); ?>
 <!DOCTYPE html>
 <html>
 <head>
